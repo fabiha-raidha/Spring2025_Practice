@@ -55,7 +55,7 @@ public class DataCreationViewController {
 
         Pharmacy pharmacy = new Pharmacy(pharmacyNameTF.getText(), zipCodeCB.getValue(), area, ownerTF.getText(), openingDatePicker.getValue(), isChainPharmacy, locationTypeCB.getValue(), tradeLicenseNumberTF.getText());
 
-        File file = new File("data/pharmacies.bin");
+        File file = new File("pharmacies.bin");
         FileOutputStream fos;
         ObjectOutputStream oos;
 
