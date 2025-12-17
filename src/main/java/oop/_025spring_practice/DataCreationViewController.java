@@ -62,7 +62,7 @@ public class DataCreationViewController {
         try  {
             if (file.exists()) {
                 fos = new FileOutputStream(file, true);
-                oos = new ObjectOutputStream(fos);
+                oos = new AppendableObjectOutputStream(fos);
 
             } else {
                 fos = new FileOutputStream(file);
